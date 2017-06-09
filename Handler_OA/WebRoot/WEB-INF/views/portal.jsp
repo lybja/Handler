@@ -29,7 +29,7 @@
                 <li data-src="${ctx }/statics/insurance/index.html"><a href="javascript:;">公共信息(wsq)</a></li>
                 <li data-src="${ctx }/statics/insurance/index.html"><a href="javascript:;">公共信息(wsq)</a></li>
                 <li data-src="${ctx }/statics/user/index.html"><a href="javascript:;">资产管理(ngs)</a></li>
-                <li data-src="${ctx }/statics/caiwu/index.html"><a href="javascript:;">财务</a></li>
+                <li data-src="${ctx }/statics/caiwu/index.html"><a href="javascript:;">财务  </a></li>
             </ul>
             <div class="notice clearfix">
                 <ul class="clearfix">
