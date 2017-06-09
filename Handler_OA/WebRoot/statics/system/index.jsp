@@ -41,14 +41,6 @@
             </div>
             <div class="content">
                 <div class="topbar clearfix">
-                    <ul class="user-msg clearfix">
-                        <li><img src="../images/583321.png" alt="">预存款金额<span>0.00元</span>[<a href="javascript:;">充值</a>]</li>
-                        <li><img src="../images/583349.png" alt="">短信<span>0</span>条[<a href="javascript:;">购买</a>]</li>
-                        <li><img src="../images/583450.png" alt="">行程单<span>0</span>份[<a href="javascript:;">购买</a>]</li>
-                        <li><img src="../images/583468.png" alt="">保险[<a href="javascript:;">购买</a>]</li>
-                        <li><img src="../images/15435.png" alt="">天气预报</li>
-                        <li><img src="../images/514958.png" alt="">[<a href="javascript:;">联系客户经理</a>]</li>
-                    </ul>
                     <div class="contact clearfix">
                         <a class="wx" href="javascript:;"><img src="../images/wx.png" alt="">微信公众号</a>
                         <a class="qq" href="javascript:;"><img src="../images/QQ.png" alt="">QQ客户</a>

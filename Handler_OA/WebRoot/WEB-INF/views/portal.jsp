@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="${ctx }/common/css/sapar.css"  type="text/css"/>
 <link rel="stylesheet" href="${ctx }/statics/css/index.css" type="text/css"/>
 
-<title>Sapar 航空代理B2B系统</title>
+<title>Handler OA自动化系统</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         	<div class="top-light"></div>
             <h1 class="logo"></h1>
             <ul class="main-nav clearfix">
-                <li class="current" data-src="statics/system/index.html"><a href="javascript:;">系统</a></li>
+                <li class="current" data-src="statics/system/index.jsp"><a href="javascript:;">系统</a></li>
                 <li data-src="${ctx }/statics/ticket/index.html"><a href="javascript:;">机票</a></li>
                 <li data-src="${ctx }/statics/msg/index.html"><a href="javascript:;">短信</a></li>
                 <li data-src="${ctx }/statics/xingchengdan/index.html"><a href="javascript:;">行程单</a></li>
@@ -58,55 +58,14 @@
         </div>
     </div>
     <div id="bd">
-    	<div class="wrap clearfix"><!-- 
-        	<div class="sidebar">
-            	<h2 class="sidebar-header"><p>功能导航</p></h2>
-                <ul class="nav">
-                	<li class="office current"><div class="nav-header"><a href="javascript:;" data-src="system/system_index.html" class="clearfix"><span>系统首页</span><i class="icon"></i></a></div></li>
-                    <li class="gongwen"><div class="nav-header"><a href="javascript:;" data-src="system/my_info.html" class="clearfix"><span>我的资料信息</span><i class="icon"></i></a></div></li>
-                    <li class="nav-info">
-                    	<div class="nav-header"><a href="javascript:;" class="clearfix"><span>投诉与建议</span><i class="icon"></i></a></div>
-                        <ul class="subnav">
-                        	<li><a href="javascript:;" date-src="info-reg.html">信息录入</a></li>
-                            <li><a href="javascript:;" date-src="info-mgt.html">信息管理</a></li>
-                            <li><a href="javascript:;" date-src="info-det.html">领导值岗管理</a></li>
-                            <li><a href="javascript:;">中层领导管理</a></li>
-                            <li><a href="javascript:;">领导值班记录</a></li>
-                        </ul>
-                    </li>
-                    <li class="konwledge"><div class="nav-header"><a href="javascript:;" class="clearfix"><span>登录记录查看</span><i class="icon"></i></a></div></li>
-                    <li class="agency"><div class="nav-header"><a href="javascript:;" class="clearfix"><span>航空公司信息</span><i class="icon"></i></a></div></li>
-                    <li class="email"><div class="nav-header"><a href="javascript:;" data-src="system/airport_info.html" class="clearfix"><span>机场信息</span><i class="icon"></i></a></div></li>
-                    <li class="email"><div class="nav-header"><a href="javascript:;" data-src="system/ol_checkin.html" class="clearfix"><span>网上值机</span><i class="icon"></i></a></div></li>
-                    <li class="system"><div class="nav-header"><a href="javascript:;" data-src="system/pwd_modify.html" class="clearfix"><span>密码修改</span><i class="icon"></i></a></div></li>
-                </ul>
-            </div>
-            <div class="content">
-                <div class="topbar clearfix">
-                    <ul class="user-msg clearfix">
-                        <li><img src="images/583321.png" alt="">预存款金额<span>0.00元</span>[<a href="javascript:;">充值</a>]</li>
-                        <li><img src="images/583349.png" alt="">短信<span>0</span>条[<a href="javascript:;">购买</a>]</li>
-                        <li><img src="images/583450.png" alt="">行程单<span>0</span>份[<a href="javascript:;">购买</a>]</li>
-                        <li><img src="images/583468.png" alt="">保险[<a href="javascript:;">购买</a>]</li>
-                        <li><img src="images/15435.png" alt="">天气预报</li>
-                        <li><img src="images/514958.png" alt="">[<a href="javascript:;">联系客户经理</a>]</li>
-                    </ul>
-                    <div class="contact clearfix">
-                        <a class="wx" href="javascript:;"><img src="images/wx.png" alt="">微信公众号</a>
-                        <a class="qq" href="javascript:;"><img src="images/QQ.png" alt="">QQ客户</a>
-                    </div>
-                </div>
-            	<iframe src="system/system_index.html" id="iframe" width="100%" height="100%" frameborder="0"></iframe>
-            </div>
-        </div>
-     -->
-
+    	<div class="wrap clearfix">
+        	
      <iframe src="${ctx }/statics/system/index.jsp" id="iframe" width="100%" height="100%" frameborder="0"></iframe>
  </div>
  </div>
     <div id="ft" class="clearfix">
     	<div class="ft-left">
-            <span>Sapar 航空代理B2B系统</span>
+            <span>Handler OA自动化系统</span>
             <em>Office&nbsp;System</em>
         </div>
         <div class="ft-right">
