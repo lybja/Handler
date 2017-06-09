@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-8 16:49:48 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.handler.domain.Ztree" table="ZTREE">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="pId" type="java.lang.Long" access="field">
+            <column name="pId" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="urls" type="java.lang.String">
+            <column name="urls" />
+        </property>
+        <set name="role" table="ztree_role" lazy="false" cascade="none">
+        	<key column="id"/>
+        	 <many-to-many class="com.handler.domain.Role" column="rid"/>
+        </set>
+    </class>
+</hibernate-mapping>
