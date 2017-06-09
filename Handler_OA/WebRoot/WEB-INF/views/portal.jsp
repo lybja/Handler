@@ -21,15 +21,14 @@
         	<div class="top-light"></div>
             <h1 class="logo"></h1>
             <ul class="main-nav clearfix">
-                <li class="current" data-src="statics/system/index.jsp"><a href="javascript:;">系统(lyb)</a></li>
-                <li data-src="${ctx }/statics/ticket/index.html"><a href="javascript:;">人事(zl)</a></li>
-                <li data-src="${ctx }/statics/msg/index.html"><a href="javascript:;">个人办公(gyq)</a></li>
-                <li data-src="${ctx }/statics/msg/index.html"><a href="javascript:;">公文管理(gyq)</a></li>
-                <li data-src="${ctx }/statics/xingchengdan/index.html"><a href="javascript:;">行政管理(wsf)</a></li>
-                <li data-src="${ctx }/statics/insurance/index.html"><a href="javascript:;">公共信息(wsq)</a></li>
-                <li data-src="${ctx }/statics/insurance/index.html"><a href="javascript:;">公共信息(wsq)</a></li>
-                <li data-src="${ctx }/statics/user/index.html"><a href="javascript:;">资产管理(ngs)</a></li>
-                <li data-src="${ctx }/statics/caiwu/index.html"><a href="javascript:;">财务  </a></li>
+                <li class="current" data-src="statics/system/index.jsp"><a href="javascript:;">系统</a></li>
+                <li data-src="${ctx }/statics/ticket/index.html"><a href="javascript:;">人事</a></li>
+                <li data-src="${ctx }/statics/msg/index.html"><a href="javascript:;">个人</a></li>
+                <li data-src="${ctx }/statics/msg/index.html"><a href="javascript:;">公文</a></li>
+                <li data-src="${ctx }/statics/xingchengdan/index.html"><a href="javascript:;">行政</a></li>
+                <li data-src="${ctx }/statics/insurance/index.html"><a href="javascript:;">公共</a></li>
+                <li data-src="${ctx }/statics/insurance/index.html"><a href="javascript:;">信息</a></li>
+                <li data-src="${ctx }/statics/user/index.html"><a href="javascript:;">资产</a></li>
             </ul>
             <div class="notice clearfix">
                 <ul class="clearfix">
