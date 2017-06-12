@@ -9,6 +9,7 @@
 <head>
 <!-- 	<link rel="stylesheet" href="css/login.css" type="text/css"/> -->
 	<link rel="stylesheet" href="${ctx }/statics/css/login.css" type="text/css"/>
+	
 	<title>移动办公自动化系统</title>
 </head>
 <body>

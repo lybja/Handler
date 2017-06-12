@@ -21,6 +21,7 @@
         	<div class="top-light"></div>
             <h1 class="logo"></h1>
             <ul class="main-nav clearfix">
+            
                 <li class="current" data-src="statics/system/index.jsp"><a href="javascript:;">系统</a></li>
                 <li data-src="${ctx }/statics/ticket/index.html"><a href="javascript:;">人事</a></li>
                 <li data-src="${ctx }/statics/msg/index.html"><a href="javascript:;">个人</a></li>
