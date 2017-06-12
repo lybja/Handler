@@ -30,6 +30,7 @@ package com.handler.service.impl;
 import org.springframework.stereotype.Service;
 
 import com.handler.dao.IUserDao;
+import com.handler.domain.User;
 import com.handler.service.IUserService;
 
 /**
@@ -54,6 +55,17 @@ public class UserService implements IUserService{
 	 */
 	public void setUserDao(IUserDao userDao) {
 		this.userDao = userDao;
+	}
+
+	/**
+	 * 功能:
+	 * 作者:李云波
+	 * 2017年6月12日下午5:19:42
+	 */
+	@Override
+	public User login(User user) {
+		// TODO Auto-generated method stub
+		return this.userDao.login(user);
 	}
 
 	

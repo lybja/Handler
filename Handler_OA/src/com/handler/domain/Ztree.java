@@ -28,6 +28,7 @@
 package com.handler.domain;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * 功能:
@@ -40,22 +41,7 @@ public class Ztree {
 	private Long pId;
 	private String name;
 	private String urls;
-	private List<Role> role;
-	/**
-	 * @param id
-	 * @param pId
-	 * @param name
-	 * @param urls
-	 * @param role
-	 */
-	public Ztree(Long id, Long pId, String name, String urls, List<Role> role) {
-		super();
-		this.id = id;
-		this.pId = pId;
-		this.name = name;
-		this.urls = urls;
-		this.role = role;
-	}
+	private Set<Role> role;
 	/**
 	 * @return the id
 	 */
@@ -107,23 +93,15 @@ public class Ztree {
 	/**
 	 * @return the role
 	 */
-	public List<Role> getRole() {
+	public Set<Role> getRole() {
 		return role;
 	}
 	/**
 	 * @param role the role to set
 	 */
-	public void setRole(List<Role> role) {
+	public void setRole(Set<Role> role) {
 		this.role = role;
 	}
-	/**
-	 * 
-	 */
-	public Ztree() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	
-	
+
 	
 }

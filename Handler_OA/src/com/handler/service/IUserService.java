@@ -27,12 +27,23 @@
  */
 package com.handler.service;
 
+import com.handler.domain.User;
+
 /**
  * 功能:
  * 作者:李云波
  * 2017年6月8日下午6:32:24
  */
 public interface IUserService {
+
+	/**
+	 * 功能:
+	 * 作者:李云波
+	 * @param user
+	 * @return
+	 * 2017年6月12日下午5:19:36
+	 */
+	User login(User user);
 
 	
 }

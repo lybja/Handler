@@ -16,6 +16,7 @@
 	<bean id="userService" class="com.handler.service.impl.UserService">
 		<property name="userDao" ref="userDao"></property>
 	</bean>
+	<!-- 工作流 service -->
 	<bean id="workflowService" class="com.handler.service.impl.WorkflowServiceImpl">
 		<property name="repositoryService" ref="repositoryService"></property>
 		<property name="runtimeService" ref="runtimeService"></property>

@@ -16,25 +16,28 @@
 	<div id="container">
 		<div id="bd">
 			<div class="login">
+			<form id="fm">
             	<div class="login-top"><h1 class="logo"></h1></div>
                 <div class="login-input">
                 	<p class="user ue-clear">
                     	<label>用户名</label>
-                        <input type="text" />
+                        <input type="text" name="user.name"/>
                     </p>
                     <p class="password ue-clear">
                     	<label>密&nbsp;&nbsp;&nbsp;码</label>
-                        <input type="text" />
+                        <input type="text" name="user.pwd"/>
                     </p>
                 </div>
                 <div class="login-btn ue-clear">
-                	<a href="login_portal.vhtml" class="btn">登录</a>
+                	<!-- <a href="login_portal.vhtml" class="btn">登录</a> -->
+                	<a href="##" class="btn" id="login">登录</a>
                     <div class="remember ue-clear">
                     	<input type="checkbox" id="remember" />
                         <em></em>
                         <label for="remember">记住密码</label>
                     </div>
                 </div>
+                </form>
             </div>
 		</div>
 	</div>
@@ -70,5 +73,24 @@ function checkRemember($this){
 		}
 	}
 }
+$(function(){
+	$("#login").click(function(){
+			$.post(
+				"login_login.vhtml",
+				$("#fm").serialize(),
+				function(r){
+					if(r){
+						alert("登录成功")
+						location="login_portal.vhtml";
+					}else{
+						alert("账号或密码错误");
+					}
+				},
+				"json"
+			
+			)
+	})
+	
+})
 </script>
 </html>

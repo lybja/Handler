@@ -27,7 +27,7 @@
  */
 package com.handler.domain;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * 功能:
@@ -39,27 +39,7 @@ public class User {
 	private Long id;//主键ID
 	private String name;//用户名
 	private String pwd;//密码
-	private List<Role> role;
-	/**
-	 * @param id
-	 * @param name
-	 * @param pwd
-	 * @param role
-	 */
-	public User(Long id, String name, String pwd, List<Role> role) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.pwd = pwd;
-		this.role = role;
-	}
-	/**
-	 * 
-	 */
-	public User() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	private Set<Role> role;
 	/**
 	 * @return the id
 	 */
@@ -99,16 +79,15 @@ public class User {
 	/**
 	 * @return the role
 	 */
-	public List<Role> getRole() {
+	public Set<Role> getRole() {
 		return role;
 	}
 	/**
 	 * @param role the role to set
 	 */
-	public void setRole(List<Role> role) {
+	public void setRole(Set<Role> role) {
 		this.role = role;
 	}
-	
-	
+
 	
 }

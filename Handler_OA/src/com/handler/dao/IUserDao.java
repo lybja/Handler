@@ -27,11 +27,22 @@
  */
 package com.handler.dao;
 
+import com.handler.domain.User;
+
 /**
  * 功能:
  * 作者:李云波
  * 2017年6月8日下午6:33:53
  */
 public interface IUserDao {
+
+	/**
+	 * 功能:
+	 * 作者:李云波
+	 * @param user
+	 * @return
+	 * 2017年6月12日下午5:20:00
+	 */
+	User login(User user);
 
 }
