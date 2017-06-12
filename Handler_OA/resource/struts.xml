@@ -41,13 +41,13 @@
     	<!-- 配置工作流action -->
     	<action name="workflowAction_*" class="workflowAction" method="{1}">
         	<result name="list" type="redirectAction">
-        		<param name="actionName">workflowAction_deployHome.action</param>
+        		<param name="actionName">workflowAction_deployHome.vhtml</param>
         	</result>
         	<result name="deployHome">WEB-INF/views/workflow/workflow.jsp</result>
         	<result name="task">WEB-INF/views/workflow/task.jsp</result>
         	<result name="image">WEB-INF/views/workflow/image.jsp</result>
         	<result name="listTask" type="redirectAction">
-    			<param name="actionName">workflowAction_listTask.action</param>
+    			<param name="actionName">workflowAction_listTask.vhtml</param>
             </result>
         	<result name="viewTaskForm" type="redirectAction">
         		<!-- 从LeaveBill.bpmn文件中获取任务节点的url连接 -->
