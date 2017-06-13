@@ -81,7 +81,8 @@ $(function(){
 				function(r){
 					if(r){
 						alert("登录成功")
-						location="login_portal.vhtml";
+						var id ='${user.id}';
+						location="login_portal.vhtml?user.id="+id;
 					}else{
 						alert("账号或密码错误");
 					}

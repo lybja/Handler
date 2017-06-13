@@ -30,7 +30,7 @@ public class LoginInteceptor implements Interceptor {
 		//获取当前访问Action的URL
 		String actionName = invocation.getProxy().getActionName();
 		//如果当前访问Action的URL是"loginAction_login"表示此时还没有Sesion，需要放行
-		if(!"loginAction_login".equals(actionName)){
+		if(!"login_login".equals(actionName)){
 			//从Session中获取当前用户对象
 			User employee = SessionContext.get();
 			//如果Session不存在，跳转到登录页面

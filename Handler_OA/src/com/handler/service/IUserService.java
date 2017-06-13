@@ -27,7 +27,11 @@
  */
 package com.handler.service;
 
+import java.util.List;
+
 import com.handler.domain.User;
+import com.handler.domain.User_Role;
+import com.handler.domain.Ztree;
 
 /**
  * 功能:
@@ -44,6 +48,24 @@ public interface IUserService {
 	 * 2017年6月12日下午5:19:36
 	 */
 	User login(User user);
+
+	/**
+	 * 功能:
+	 * 作者:李云波
+	 * @param user
+	 * @return
+	 * 2017年6月13日上午11:03:52
+	 */
+	User_Role getRoleId(User user);
+
+	/**
+	 * 功能:
+	 * 作者:李云波
+	 * @param ur
+	 * @return
+	 * 2017年6月13日下午4:00:03
+	 */
+	List<Ztree> getZtreeList(User_Role ur);
 
 	
 }

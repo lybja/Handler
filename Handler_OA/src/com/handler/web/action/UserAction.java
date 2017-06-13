@@ -29,6 +29,8 @@ package com.handler.web.action;
 
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -37,7 +39,10 @@ import javax.servlet.http.HttpSession;
 import org.apache.struts2.interceptor.ServletRequestAware;
 import org.apache.struts2.interceptor.ServletResponseAware;
 
+import com.handler.domain.Role;
 import com.handler.domain.User;
+import com.handler.domain.User_Role;
+import com.handler.domain.Ztree;
 import com.handler.service.IUserService;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
@@ -56,8 +61,24 @@ public class UserAction extends ActionSupport implements ModelDriven<User>,Servl
 	private HttpServletResponse response;
 	
 	private User user= new User();
+	private User_Role ur= new User_Role();
+	private Role role= new Role();
+	private Ztree ztree= new Ztree();
+	private List<Ztree> list= new ArrayList<Ztree>();
+	
+	
+	/**
+	 * 
+	 * 功能:去门户页面
+	 * 作者:李云波
+	 * @return
+	 * 2017年6月13日上午8:37:59
+	 */
 	public String portal(){
-		
+		//获得该用户的角色id
+		ur = this.userService.getRoleId(user);
+		//获取权限树
+		list=this.userService.getZtreeList(ur);
 		return "success";
 	}
 	
@@ -69,8 +90,8 @@ public class UserAction extends ActionSupport implements ModelDriven<User>,Servl
 	 * 2017年6月12日下午5:08:27
 	 */
 	public void login(){
-		User u = userService.login(user);
-		if(u.getId()!=null&&u.getId()!=0){
+		user = userService.login(user);
+		if(user.getId()!=null&&user.getId()!=0){
 			try {
 				HttpSession session = request.getSession();
 				session.setAttribute("user", user);
@@ -185,6 +206,66 @@ public class UserAction extends ActionSupport implements ModelDriven<User>,Servl
 	public void setResponse(HttpServletResponse response) {
 		this.response = response;
 	}
+
+	/**
+	 * @return the ur
+	 */
+	public User_Role getUr() {
+		return ur;
+	}
+
+	/**
+	 * @param ur the ur to set
+	 */
+	public void setUr(User_Role ur) {
+		this.ur = ur;
+	}
+
+	/**
+	 * @return the role
+	 */
+	public Role getRole() {
+		return role;
+	}
+
+	/**
+	 * @param role the role to set
+	 */
+	public void setRole(Role role) {
+		this.role = role;
+	}
+
+	/**
+	 * @return the ztree
+	 */
+	public Ztree getZtree() {
+		return ztree;
+	}
+
+	/**
+	 * @param ztree the ztree to set
+	 */
+	public void setZtree(Ztree ztree) {
+		this.ztree = ztree;
+	}
+
+	/**
+	 * @return the list
+	 */
+	public List<Ztree> getList() {
+		return list;
+	}
+
+	/**
+	 * @param list the list to set
+	 */
+	public void setList(List<Ztree> list) {
+		this.list = list;
+	}
+	
+	
 	
 
+	
+	
 }
