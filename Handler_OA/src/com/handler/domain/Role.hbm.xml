@@ -12,11 +12,11 @@
             <column name="name" />
         </property>
         <set name="user" table="user_role" lazy="false" cascade="none">
-        	<key column="id"/>
+        	<key column="rid"/>
         	 <many-to-many class="com.handler.domain.User" column="uid"/>
         </set>
          <set name="ztree" table="ztree_role" lazy="false" cascade="none">
-        	<key column="id"/>
+        	<key column="rid"/>
         	 <many-to-many class="com.handler.domain.Ztree" column="zid"/>
         </set>
     </class>

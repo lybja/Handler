@@ -35,7 +35,7 @@
         	<result name="success">WEB-INF/views/portal.jsp</result>
         	<result name="top">WEB-INF/views/top.jsp</result>
         	<result name="left">WEB-INF/views/left.jsp</result>
-        	<result name="welcome">WEB-INF/views/welcome.jsp</result>
+        	<result name="*-*- ">WEB-INF/views/welcome.jsp</result>
         </action>
     	
     	<!-- 配置工作流action -->

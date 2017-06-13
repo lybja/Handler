@@ -18,7 +18,7 @@
             <column name="urls" />
         </property>
         <set name="role" table="ztree_role" lazy="false" cascade="none">
-        	<key column="id"/>
+        	<key column="zid"/>
         	 <many-to-many class="com.handler.domain.Role" column="rid"/>
         </set>
     </class>

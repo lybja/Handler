@@ -16,7 +16,7 @@
         </property>
         
         <set name="role" table="user_role" lazy="false" cascade="none">
-        	<key column="id"/>
+        	<key column="uid"/>
         	 <many-to-many class="com.handler.domain.Role" column="rid"/>
         </set>
     </class>
