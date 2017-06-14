@@ -1,3 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+    <%
+	request.setAttribute("ctx", request.getContextPath());
+	%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,17 +23,9 @@
         <div id="saper-hd"></div>
         <div id="saper-bd">
              <div class="subfiled clearfix">
-                <h2>航空公司信息</h2>
+                <h2>权限信息</h2>
             </div>
             <div class="subfiled-content">
-                <form class="saper-form">
-                    <div class="kv-item clearfix">
-                        <label>航空公司:</label>
-                        <div class="kv-item-content">
-                            <input type="text" placeholder="">
-                        </div>
-                    </div>
-                </form>
                 <!--表格开始-->
                 <div class="table">
 
@@ -48,41 +46,6 @@
                                     <td>028-88888888或4008300999</td>
                                 </tr>
                                 <tr style="background-color: #EFF6FA;">
-                                    <td>四川航空</td>
-                                    <td>3U</td>
-                                    <td>028-88888888或4008300999</td>
-                                </tr>
-                                <tr>
-                                    <td>四川航空</td>
-                                    <td>3U</td>
-                                    <td>028-88888888或4008300999</td>
-                                </tr>
-                                <tr style="background-color: rgb(239, 246, 250);">
-                                    <td>四川航空</td>
-                                    <td>3U</td>
-                                    <td>028-88888888或4008300999</td>
-                                </tr>
-                                <tr>
-                                    <td>四川航空</td>
-                                    <td>3U</td>
-                                    <td>028-88888888或4008300999</td>
-                                </tr>
-                                <tr style="background-color: rgb(239, 246, 250);">
-                                    <td>四川航空</td>
-                                    <td>3U</td>
-                                    <td>028-88888888或4008300999</td>
-                                </tr>
-                                <tr>
-                                    <td>四川航空</td>
-                                    <td>3U</td>
-                                    <td>028-88888888或4008300999</td>
-                                </tr>
-                                <tr style="background-color: rgb(239, 246, 250);">
-                                    <td>四川航空</td>
-                                    <td>3U</td>
-                                    <td>028-88888888或4008300999</td>
-                                </tr>
-                                <tr>
                                     <td>四川航空</td>
                                     <td>3U</td>
                                     <td>028-88888888或4008300999</td>
