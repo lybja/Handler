@@ -29,6 +29,6 @@ $('.exitDialog input[type=button]').click(function(e) {
     $('.exitDialog').Dialog('close');
 	
 	if($(this).hasClass('ok')){
-		window.location.href = "login.html"	;
+		window.location.href = "login_out.vhtml"	;
 	}
 });

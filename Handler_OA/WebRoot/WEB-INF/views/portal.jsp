@@ -33,20 +33,9 @@
                 <li data-src="${ctx }/statics/insurance/index.html"><a href="javascript:;">信息</a></li>
                 <li data-src="${ctx }/statics/user/index.html"><a href="javascript:;">资产</a></li> --%>
             </ul>
-            <div class="notice clearfix">
-                <ul class="clearfix">
-                    <li class="current"><a href="javascript:;">关于客票行程单打印通知</a></li>
-                    <li><a href="javascript:;">关于网银付款升级通知</a></li>
-                    <li><a href="javascript:;">关于客票行程单打印通知</a></li>
-                </ul>
-                <div class="notice-btn">
-                    <a href="javascript:;" class="prev"></a>
-                    <a href="javascript:;" class="next"></a>
-                </div>
-            </div>
             <div class="toolbar">
                 <div class="login-info clearfix">
-                    <div class="welcome clearfix"><span>欢迎您,</span><a href="javascript:;" class="user-name">Admin</a></div>
+                    <div class="welcome clearfix"><span>欢迎您,</span><a href="javascript:;" class="user-name">${globle_user.name }</a></div>
                     <div class="login-msg clearfix">
                         <a href="javascript:;" class="msg-txt">消息</a>
                         <a href="javascript:;" class="msg-num">10</a>
@@ -64,7 +53,7 @@
     <div id="bd">
     	<div class="wrap clearfix">
         	
-     <iframe src="${ctx }/statics/system/index.jsp" id="iframe" width="100%" height="100%" frameborder="0"></iframe>
+     <iframe src="${ctx }/statics/msg/index.jsp" id="iframe" width="100%" height="100%" frameborder="0"></iframe>
  </div>
  </div>
     <div id="ft" class="clearfix">

@@ -25,11 +25,10 @@
                     </p>
                     <p class="password ue-clear">
                     	<label>密&nbsp;&nbsp;&nbsp;码</label>
-                        <input type="text" name="user.pwd"/>
+                        <input type="password" name="user.pwd"/>
                     </p>
                 </div>
                 <div class="login-btn ue-clear">
-                	<!-- <a href="login_portal.vhtml" class="btn">登录</a> -->
                 	<a href="##" class="btn" id="login">登录</a>
                     <div class="remember ue-clear">
                     	<input type="checkbox" id="remember" />
@@ -75,21 +74,22 @@ function checkRemember($this){
 }
 $(function(){
 	$("#login").click(function(){
-			$.post(
-				"login_login.vhtml",
-				$("#fm").serialize(),
-				function(r){
+			$.ajax({
+				url:"login_login.vhtml",
+				data:$("#fm").serialize(),
+				success:function(r){
 					if(r){
 						alert("登录成功")
-						var id ='${user.id}';
-						location="login_portal.vhtml?user.id="+id;
+						location="login_info.vhtml";
 					}else{
 						alert("账号或密码错误");
 					}
 				},
-				"json"
-			
-			)
+				dataType:"json",
+				async:false
+				
+			})
+							
 	})
 	
 })

@@ -7,8 +7,6 @@
 <!doctype html>
 <html>
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="../../common/css/sapar.css" />
 <link rel="stylesheet" href="../css/index_inner.css" />
 

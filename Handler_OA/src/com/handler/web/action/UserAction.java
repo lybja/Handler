@@ -35,6 +35,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.websocket.Session;
 
 import org.apache.struts2.interceptor.ServletRequestAware;
 import org.apache.struts2.interceptor.ServletResponseAware;
@@ -44,6 +45,7 @@ import com.handler.domain.User;
 import com.handler.domain.User_Role;
 import com.handler.domain.Ztree;
 import com.handler.service.IUserService;
+import com.handler.utils.SessionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
@@ -69,6 +71,21 @@ public class UserAction extends ActionSupport implements ModelDriven<User>,Servl
 	
 	/**
 	 * 
+	 * 功能:退出 session销毁
+	 * 作者:李云波
+	 * @return
+	 * 2017年6月13日上午8:37:59
+	 */
+	public String out(){
+		SessionContext.invalidate();
+		return "out";
+	}
+	
+	public String info(){
+		return "info";
+	}
+	/**
+	 * 
 	 * 功能:去门户页面
 	 * 作者:李云波
 	 * @return
@@ -90,14 +107,12 @@ public class UserAction extends ActionSupport implements ModelDriven<User>,Servl
 	 * 2017年6月12日下午5:08:27
 	 */
 	public void login(){
-		user = userService.login(user);
-		if(user.getId()!=null&&user.getId()!=0){
+		User u = userService.login(user);
+		if(u!=null&&u.getId()!=0){
 			try {
-				HttpSession session = request.getSession();
-				session.setAttribute("user", user);
+				SessionContext.setUser(u);
 				response.getWriter().print(true);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}else{

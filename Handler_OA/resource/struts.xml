@@ -33,6 +33,8 @@
     	<!-- 配置登录action -->
     	<action name="login_*" class="UserAction" method="{1}">
         	<result name="success">WEB-INF/views/portal.jsp</result>
+        	<result name="out">login.jsp</result>
+        	<result name="info">WEB-INF/views/info.jsp</result>
         	<result name="top">WEB-INF/views/top.jsp</result>
         	<result name="left">WEB-INF/views/left.jsp</result>
         	<result name="*-*- ">WEB-INF/views/welcome.jsp</result>

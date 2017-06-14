@@ -19,4 +19,13 @@ public class SessionContext {
 	public static User get(){
 		return (User) ServletActionContext.getRequest().getSession().getAttribute(GLOBLE_USER_SESSION);
 	}
+	/**
+	 * 
+	 * 功能:注销
+	 * 作者:李云波
+	 * 2017年6月14日下午1:55:49
+	 */
+	public static void invalidate(){
+	  ServletActionContext.getRequest().getSession(false).invalidate();;
+	}
 }
