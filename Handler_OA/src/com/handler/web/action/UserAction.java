@@ -92,10 +92,10 @@ public class UserAction extends ActionSupport implements ModelDriven<User>,Servl
 	 * 2017年6月13日上午8:37:59
 	 */
 	public String portal(){
-		//获得该用户的角色id
+		/*//获得该用户的角色id
 		ur = this.userService.getRoleId(user);
 		//获取权限树
-		list=this.userService.getZtreeList(ur);
+		list=this.userService.getZtreeList(ur);*/
 		return "success";
 	}
 	

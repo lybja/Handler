@@ -45,7 +45,7 @@
         	<result name="list" type="redirectAction">
         		<param name="actionName">workflowAction_deployHome.vhtml</param>
         	</result>
-        	<result name="deployHome">WEB-INF/views/workflow/workflow.jsp</result>
+        	<result name="deployHome">/statics/user/manage.jsp</result>
         	<result name="task">WEB-INF/views/workflow/task.jsp</result>
         	<result name="image">WEB-INF/views/workflow/image.jsp</result>
         	<result name="listTask" type="redirectAction">

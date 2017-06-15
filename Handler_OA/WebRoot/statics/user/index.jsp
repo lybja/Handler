@@ -1,4 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+    <%
+	request.setAttribute("ctx", request.getContextPath());
+	%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
@@ -16,8 +22,8 @@
         	<div class="sidebar">
             	<h2 class="sidebar-header"><p>功能导航</p></h2>
                 <ul class="nav">
-                	<li class="office current"><div class="nav-header"><a href="javascript:;" data-src="manage.html" class="clearfix"><span>员工管理</span><i class="icon"></i></a></div></li>
-                    <li class="gongwen"><div class="nav-header"><a href="javascript:;" data-src="send_msg.html" class="clearfix"><span>常旅客管理</span><i class="icon"></i></a></div></li>
+                	<li class="office current"><div class="nav-header"><a href="javascript:;" data-src="manage.jsp" class="clearfix"><span>员工管理</span><i class="icon"></i></a></div></li>
+                    <li class="gongwen"><div class="nav-header"><a href="javascript:;" data-src="manage.jsp" class="clearfix"><span>常旅客管理</span><i class="icon"></i></a></div></li>
                     
                 </ul>
             </div>
@@ -36,7 +42,7 @@
                         <a class="qq" href="javascript:;"><img src="../images/QQ.png" alt="">QQ客户</a>
                     </div>
                 </div>
-            	<iframe src="manage.html" id="iframe" width="100%" height="100%" frameborder="0"></iframe>
+            	<iframe src="manage.jsp" id="iframe" width="100%" height="100%" frameborder="0"></iframe>
             </div>
         </div>
     </div>

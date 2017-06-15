@@ -21,17 +21,17 @@
         	<div class="top-light"></div>
             <h1 class="logo"></h1>
             <ul class="main-nav clearfix">
-            <c:forEach items="${list }" var="s">
+            <%-- <c:forEach items="${list }" var="s">
                 <li data-src="${s[3]}"><a href="javascript:;">${s[1] } </a></li>
-            </c:forEach>
-                <%-- <li class="current" data-src="statics/system/index.jsp"><a href="javascript:;">系统</a></li>
+            </c:forEach> --%>
+                 <li class="current" data-src="statics/system/index.jsp"><a href="javascript:;">系统</a></li>
                 <li data-src="${ctx }/statics/ticket/index.html"><a href="javascript:;">人事</a></li>
                 <li data-src="${ctx }/statics/msg/index.html"><a href="javascript:;">个人</a></li>
                 <li data-src="${ctx }/statics/msg/index.html"><a href="javascript:;">公文</a></li>
                 <li data-src="${ctx }/statics/xingchengdan/index.html"><a href="javascript:;">行政</a></li>
                 <li data-src="${ctx }/statics/insurance/index.html"><a href="javascript:;">公共</a></li>
                 <li data-src="${ctx }/statics/insurance/index.html"><a href="javascript:;">信息</a></li>
-                <li data-src="${ctx }/statics/user/index.html"><a href="javascript:;">资产</a></li> --%>
+                <li data-src="${ctx }/statics/user/index.jsp"><a href="javascript:;">资产</a></li> 
             </ul>
             <div class="toolbar">
                 <div class="login-info clearfix">
