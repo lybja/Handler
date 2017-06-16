@@ -45,7 +45,7 @@
         	<result name="list" type="redirectAction">
         		<param name="actionName">workflowAction_deployHome.vhtml</param>
         	</result>
-        	<result name="deployHome">/statics/user/manage.jsp</result>
+        	<result name="deployHome">WEB-INF/views/statics/user/manage.jsp</result>
         	<result name="task">WEB-INF/views/workflow/task.jsp</result>
         	<result name="image">WEB-INF/views/workflow/image.jsp</result>
         	<result name="listTask" type="redirectAction">
@@ -53,6 +53,29 @@
             </result>
         	<result name="viewTaskForm" type="redirectAction">
         		<!-- 从LeaveBill.bpmn文件中获取任务节点的url连接 -->
+        		<param name="actionName">/${#url}</param>
+        	</result>
+        	<result name="taskForm">WEB-INF/views/workflow/taskForm.jsp</result>
+            <result name="viewHisComment">WEB-INF/views/workflow/taskFormHis.jsp</result>
+        </action>
+        
+        <!-- 配置工作流action资产管理 -->
+    	<action name="asset_*" class="assetAction" method="{1}">
+    		<result name="zcindex">WEB-INF/views/statics/user/index.jsp</result>
+        	<result name="a">/WEB-INF/views/statics/user/manage.jsp</result>
+        	<result name="b">/WEB-INF/views/statics/user/changlvke.jsp</result>
+    	
+        	<result name="list" type="redirectAction">
+        		<param name="actionName">asset_deployHome.vhtml</param>
+        	</result>
+        	<result name="deployHome">WEB-INF/views/statics/user/manage.jsp</result>
+        	<result name="task">WEB-INF/views/workflow/task.jsp</result>
+        	<result name="image">WEB-INF/views/workflow/image.jsp</result>
+        	<result name="listTask" type="redirectAction">
+    			<param name="actionName">asset_listTask.vhtml</param>
+            </result>
+        	<result name="viewTaskForm" type="redirectAction">
+        		从LeaveBill.bpmn文件中获取任务节点的url连接
         		<param name="actionName">/${#url}</param>
         	</result>
         	<result name="taskForm">WEB-INF/views/workflow/taskForm.jsp</result>

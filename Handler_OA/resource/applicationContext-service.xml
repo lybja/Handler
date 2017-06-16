@@ -24,4 +24,12 @@
 		<property name="formService" ref="formService"></property>
 		<property name="historyService" ref="historyService"></property>
 	</bean>
+	<!-- 工作流 service 资产管理-->
+	<bean id="assetService" class="com.handler.service.impl.AssetServiceImpl">
+		<property name="repositoryService" ref="repositoryService"></property>
+		<property name="runtimeService" ref="runtimeService"></property>
+		<property name="taskService" ref="taskService"></property>
+		<property name="formService" ref="formService"></property>
+		<property name="historyService" ref="historyService"></property>
+	</bean>
 </beans>
